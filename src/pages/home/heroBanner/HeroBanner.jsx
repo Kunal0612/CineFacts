@@ -28,7 +28,9 @@ const HeroBanner = () => {
         }
     };
     const handleSearch = () => {
-        navigate(`/search/${query}`);
+        if (query.length > 0) {
+            navigate(`/search/${query}`);
+        }
       };
     return (
         <div className="heroBanner">
@@ -41,16 +43,15 @@ const HeroBanner = () => {
             <div className="opacity-layer"></div>
             <ContentWrapper>
                 <div className="heroBannerContent">
-                    <span className="title">Welcome.</span>
+                    <span className="title">Welcome</span>
                     <span className="subTitle">
-                        Millions of movies, TV shows and people to discover.
+                        Millions of Movies, TV shows and People to discover.
                         Explore now.
                     </span>
                     <div className="searchInput">
                         <input
                             type="text"
-                            placeholder="Search for a movie or tv show...."
-                            // onClick={IncNum}
+                            placeholder="Search for a Movie or TV Show"
                             onChange={(e) => setQuery(e.target.value)}
                             onKeyUp={searchQueryHandler}
                         />
