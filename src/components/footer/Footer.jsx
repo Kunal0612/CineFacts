@@ -31,15 +31,15 @@ const Footer = () => {
                     <span className="icon">
                         <FaFacebookF />
                     </span>
-                    <span className="icon">
+                    <a className="icon" href="https://www.instagram.com/_kunal.cpp_12/">
                         <FaInstagram />
-                    </span>
+                    </a>
                     <span className="icon">
                         <FaTwitter />
                     </span>
-                    <span className="icon">
+                    <a className="icon" href="https://www.linkedin.com/in/kunal-shaw-/">
                         <FaLinkedin />
-                    </span>
+                    </a>
                 </div>
             </ContentWrapper>
         </footer>
