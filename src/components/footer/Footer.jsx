@@ -31,13 +31,13 @@ const Footer = () => {
                     <span className="icon">
                         <FaFacebookF />
                     </span>
-                    <a className="icon" href="https://www.instagram.com/_kunal.cpp_12/">
+                    <a className="icon">
                         <FaInstagram />
                     </a>
                     <span className="icon">
                         <FaTwitter />
                     </span>
-                    <a className="icon" href="https://www.linkedin.com/in/kunal-shaw-/">
+                    <a className="icon">
                         <FaLinkedin />
                     </a>
                 </div>
