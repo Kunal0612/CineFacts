@@ -18,7 +18,12 @@ const Header = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
+  // Whenever our location changes, we will get to the top
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  },[location])
 
+  // hide and show the blur of header section
   const controlNavbar = () => {
     if(window.scrollY>200){
       if(window.scrollY>lastScrollY && !mobileMenu){
