@@ -17,6 +17,49 @@
 
 ---
 
+## React Components Used in CineFacts
+
+1. **App Component**:
+   - **Purpose**: The root component of the application, responsible for rendering the overall structure and managing routes.
+   - **Features**: 
+     - Uses **React Router DOM** to handle navigation between different pages like the homepage, movie details, and search results.
+
+2. **MovieList Component**:
+   - **Purpose**: Displays a list of movies fetched from the TMDb API.
+   - **Features**: 
+     - Implements **React Infinite Scroll** to load more movies as the user scrolls, providing a seamless user experience.
+     - Manages movie data and renders each movie as a card with basic details such as title and poster.
+
+3. **MovieCard Component**:
+   - **Purpose**: Renders individual movie details in the list, such as the movie poster, title, and release date.
+   - **Features**: 
+     - Optimizes image loading using the **React Lazy Load Image** component to ensure faster page loads and improved performance.
+
+4. **MovieDetail Component**:
+   - **Purpose**: Displays detailed information about a specific movie, including trailers, cast, and other metadata.
+   - **Features**: 
+     - Uses **React Player** to embed and play movie trailers, enhancing the user experience with video playback.
+     - Fetches additional details from the TMDb API based on the movie ID passed via the router.
+
+5. **SearchBar Component**:
+   - **Purpose**: Allows users to search for movies by title.
+   - **Features**: 
+     - Captures user input and fetches search results from the API.
+     - Provides real-time feedback as users type their queries.
+
+6. **Navbar Component**:
+   - **Purpose**: Provides navigation links to different sections of the app, such as Home, Popular Movies, and Search.
+   - **Features**: 
+     - Includes links to external pages (like your GitHub or LinkedIn profiles) for easy access to other projects.
+
+7. **Loader Component**:
+   - **Purpose**: Displays a loading spinner while waiting for API data to be fetched.
+   - **Features**: 
+     - Simple, reusable component that enhances user experience during data fetching processes.
+
+---
+
+
 ## How to Run This Project
 
 1. **Clone the repository**: 
